@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.slider-image {
+  max-height: 50px;
+  border-bottom: 1px solid red;
+}
+
+.myNamvigationLinks {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.myLink {
+  color: white;
+  margin-right: 100px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.myLink:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.carousel-item {
+  object-fit: contain;
+}
