@@ -67,3 +67,14 @@
 .carousel-item img {
   object-fit: contain;
 }
+.form-label,
+.col-form-label {
+  color: black;
+}
+
+.btn-link {
+  color: white;
+}
+.my-gradient {
+  background: linear-gradient(45deg, #8d000b, #fbff00);
+}

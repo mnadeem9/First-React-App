@@ -11,7 +11,11 @@ import LoginPage from "./Pages/LoginPage";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<LoginPage />} />
+      <Route
+        className="flex-grow-1 d-flex flex-column"
+        path="/"
+        element={<LoginPage />}
+      />
       <Route
         path="/"
         element={
