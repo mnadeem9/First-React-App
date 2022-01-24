@@ -27,7 +27,7 @@ const ProductList = () => {
   };
 
   return (
-    <>
+    <section className="flex-grow-1">
       <div className="container">
         <div className="d-flex mt-3 mb-3 me-2 justify-content-between">
           <h6>&nbsp;</h6>
@@ -128,7 +128,7 @@ const ProductList = () => {
       </div>
 
       {/* Delete Toast Ends here                */}
-    </>
+    </section>
   );
 };
 

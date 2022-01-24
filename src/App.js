@@ -10,27 +10,24 @@ import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route
-          path="/"
-          element={
-            <>
-              <NavBar />
-              <Outlet />
-              <Footer />
-            </>
-          }
-        >
-          <Route path="home" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicePage />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-        </Route>
-      </Routes>
-      {/* <Footer /> */}
-    </div>
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route
+        path="/"
+        element={
+          <section className="flex-grow-1 d-flex flex-column">
+            <NavBar />
+            <Outlet className="d-flex flex-column flex-grow-1" />
+            <Footer />
+          </section>
+        }
+      >
+        <Route path="home" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicePage />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Route>
+    </Routes>
   );
 }
 
