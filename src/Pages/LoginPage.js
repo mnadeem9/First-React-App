@@ -68,9 +68,11 @@ function LoginPage() {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col">
+                  <div className="col-6 offset-3">
                     <div className="d-flex flex-column justify-content-center align-content-center p-4">
-                      <button className="btn btn-success mb-2">Login</button>
+                      <button className="btn btn-success mb-2" onClick={login}>
+                        Login
+                      </button>
                       <h6 className="mt-2 text-center primary">
                         Forgot Password
                       </h6>
